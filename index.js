@@ -1,9 +1,22 @@
 function isPalindrome(word) {
   // Write your algorithm here
+   const len = word.length;
+
+   for (let i = 0; i < len/2; i++) {
+    if(word[i] !== word[len - 1 - i]) {
+      return false;
+    }
+   }
+   return true;
 }
 
 /* 
   Add your pseudocode here
+  //write function isPalindrome 
+  //function takes parameter 'string'
+  //create a for loop that adds i plus 1 for the length of the string
+  //create if statement 
+  //it will return true or false
 */
 
 /*
